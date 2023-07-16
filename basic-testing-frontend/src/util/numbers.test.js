@@ -38,9 +38,12 @@ describe("cleanNumbers()", () => {
 
     const cleanedNumbers = cleanNumbers(numberValues);
 
-    expect(cleanedNumbers[0]).toBeTypeOf("number");
+    // expect(cleanedNumbers[0]).toBeTypeOf("number");
+    // In JS we cannot use toBe because of the way it handles arrays and objects
+    // toEqual looks at the values
+    expect(cleanedNumbers).toEqual([1,2]);
   });
-  
+
   // test that functions actually perform correct in integrated functions
   it("should throw an error if an array with at least one empty string is provided", () => {
     const numberValues = ['', 1];
