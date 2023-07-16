@@ -69,9 +69,25 @@ it('should yield 0 if an empty array if provided', () => {
 })
 
 it('should throw an error if no value is passed into the function', () => {
-    const result = add();
+  const resultFn = () => {
+    add();
+  };
+  // we use the add() function in a variable so it executes along side toThrow() to see if it returns something
+  // this is similiar to a throw catch
+  expect(resultFn).toThrow(/is not iterable/);
+  // checks for the opposite of any "to" function
+  // expect(resultFn).not.toThrow(); 
+});
 
-    
+it('should throw an error if provided with multiple arguments instead of an array', () => {
+  const num1 = 1;
+  const num2 = 2;
+
+  const resultFn = () => {
+    add(num1, num2);
+  };
+
+  expect(resultFn).toThrow(/is not iterable/);
 });
 
 // Note
