@@ -1,0 +1,15 @@
+What to Test?
+Only test what you can manipulate, this means dont test apis, browser api, third party api, etc.
+
+Rules to write good tests:
+AAA
+Arange - Act - Assert
+
+Only TEST ONE THING.
+    - One Feature or One behavior.
+    - Multiple tests instead of one big one.
+
+Focuse on the ESSENCE of a test when arranging.
+
+Keep your number of assertions("expects") LOW.
+
