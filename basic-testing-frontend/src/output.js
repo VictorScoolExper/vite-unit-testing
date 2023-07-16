@@ -1,5 +1,5 @@
 export function generateResultText(calculationResult) {
-  let resultText = "";
+  let resultText = '';
 
   if (calculationResult === "invalid") {
     resultText = "Invalid input. You must enter valid numbers.";
