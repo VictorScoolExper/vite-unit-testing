@@ -13,3 +13,6 @@ Focuse on the ESSENCE of a test when arranging.
 
 Keep your number of assertions("expects") LOW.
 
+Error Notes:---------------------------------------------------
+When importing functions make sure that you clarify the name of the file because it could cause
+some confusion with the test files since they are name similarly
