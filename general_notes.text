@@ -1,18 +1,13 @@
-What to Test?
-Only test what you can manipulate, this means dont test apis, browser api, third party api, etc.
+Spies & Mocks
+They help us avoid testing third party code using spies and mocks
 
-Rules to write good tests:
-AAA
-Arange - Act - Assert
+Spies: "Wrappers" around functions or empty replacements for function that allow
+you track if & how a function was called.
 
-Only TEST ONE THING.
-    - One Feature or One behavior.
-    - Multiple tests instead of one big one.
+With spy function you can get lots of details such as amount of times it was called, if it was 
+called and if it was called with such functions and more...
 
-Focuse on the ESSENCE of a test when arranging.
+Mocks: A replacement for an API that may provide some test-specific behavior instead.
 
-Keep your number of assertions("expects") LOW.
-
-Error Notes:---------------------------------------------------
-When importing functions make sure that you clarify the name of the file because it could cause
-some confusion with the test files since they are name similarly
+We can create a folder in the called __mocks__ and here we can keep mock libraries of all the 
+libraries used.
