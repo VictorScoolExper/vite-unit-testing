@@ -1,0 +1,8 @@
+Mocking HTTP requests
+
+Like files systems we have to mock the HTTP requests so we don't slow down request.
+
+if we use globally avaible functions we must create useing:
+vi.stubGloabal('name of key to be replaced', ()=> {
+    function that will replace the key functionality
+})
