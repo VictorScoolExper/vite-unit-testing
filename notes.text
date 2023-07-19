@@ -1,8 +1,5 @@
-Mocking HTTP requests
+Dom 
 
-Like files systems we have to mock the HTTP requests so we don't slow down request.
+vitest and jest have virtual doms to be able to test
 
-if we use globally avaible functions we must create useing:
-vi.stubGloabal('name of key to be replaced', ()=> {
-    function that will replace the key functionality
-})
+"Testing Library" is also a library that might be better to create dom test
