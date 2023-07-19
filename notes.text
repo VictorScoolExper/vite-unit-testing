@@ -1,5 +1,0 @@
-Dom 
-
-vitest and jest have virtual doms to be able to test
-
-"Testing Library" is also a library that might be better to create dom test
